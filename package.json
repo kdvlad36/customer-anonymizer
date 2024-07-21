@@ -1,0 +1,23 @@
+{
+    "name": "customer-anonymizer",
+    "version": "1.0.0",
+    "description": "Customer data anonymization service",
+    "main": "dist/app.js",
+    "scripts": {
+        "build": "tsc",
+        "start:app": "tsc && node dist/app.js",
+        "start:sync": "tsc && node dist/sync.js",
+        "start:sync:full": "tsc && node dist/sync.js --full-reindex",
+        "format": "prettier --write \"src/**/*.ts\""
+    },
+    "dependencies": {
+        "dotenv": "^16.4.5",
+        "mongodb": "^6.8.0"
+    },
+    "devDependencies": {
+        "@faker-js/faker": "^7.6.0",
+        "@types/node": "^20.14.10",
+        "prettier": "^2.8.8",
+        "typescript": "^5.5.3"
+    }
+}
